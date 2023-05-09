@@ -1,6 +1,13 @@
+
+
+
+
 const app={
+
+
     data(){
         return{
+
             currentPage:"home",
             links:[
                 {id:1,img:'phone.png',name:"Мобильные"},
@@ -8,15 +15,23 @@ const app={
                 {id:3,img:'phone case.png',name:"Phone case"},
                 {id:4,img:'GPU.png',name:"MSI GeForce GTX 1660 SUPER Gaming"},
                 {id:5,img:'cpu.png',name:"I7-7700K"},
-                {id:6,img:'bicyсle.png',name:"Велосипед Altair AL 27.5 V FR"},
+                {id:6,img:'bike.png',name:"Велосипеды"},
 
             ],
+            slides: [
+                {id:1,img:'iphone13.png',},
+                {id:2,img:'Airpods.png'},
+                {id:3,img:'GPU.jpg'},
+
+            ], // Список слайдов
+
             isVisible:false,
             isVisiblee:false,
             isVisibleee:false
 
         }
     },
+
     methods:{
         showElement(a) {
 
@@ -38,7 +53,7 @@ const app={
         },
         hideElementss(c) {
             this.isVisibleee = false;
-        }
+        },
 
     }
 }
